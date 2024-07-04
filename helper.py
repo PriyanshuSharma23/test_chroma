@@ -14,6 +14,10 @@ import json
 import time
 from typing import Callable
 
+def pretty_print_json(js):
+    data = json.loads(js)
+    pretty_print(data)
+
 
 def pretty_print(data):
     print(json.dumps(data, indent=2, sort_keys=True))
